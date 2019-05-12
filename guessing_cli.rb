@@ -1,7 +1,7 @@
 # Code your solution here!
 #Taking in input from the command line - Comparing that input to a random number that has been generate
-=begindef run_guessing_game
-  loop do
+def run_guessing_game
+=begin  loop do
     puts "Guess a number between 1 to 6."
     guess == gets.chomp
     #generate random number
@@ -19,5 +19,5 @@
     else
       puts "Invalid input"
     end
-  end
 =end
+end
