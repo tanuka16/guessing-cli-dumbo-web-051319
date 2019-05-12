@@ -9,7 +9,7 @@ def run_guessing_game
     if guess == "exit"
       puts "Goodbye"
       break
-
+      #compare guess to random number
     elsif guess.to_i == random_num
       puts "You guessed the correct number!"
 
