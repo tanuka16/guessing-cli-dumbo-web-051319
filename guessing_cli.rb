@@ -6,6 +6,7 @@ def run_guessing_game
     input == gets.chomp
     #generate random number
     random = rand(1..6)
-    if random == input
+    if input == "exit"
+      "Goodbye" 
   end
 end
