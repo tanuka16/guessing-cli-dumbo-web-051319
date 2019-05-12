@@ -1,23 +1,18 @@
 # Code your solution here!
 #Taking in input from the command line - Comparing that input to a random number that has been generated
 def run_guessing_game
-  loop do
-    puts "Guess a number between 1 to 6."
-    guess == gets.chomp
-    #generate random number
-    random_num = rand(1..6)
-    if guess == "exit"
-      puts "Goodbye"
-      break
-      #compare guess to random number
-    elsif guess.to_i == random_num
-      puts "You guessed the correct number!"
-
-    elsif guess.to_i != random_num
-      puts "The computer guessed #{random_num}"
-
+	puts "/Guess a number betwen 1 and 6."
+	roll = 1+rand(6)
+	user_input = gets.chomp.to_s
+    if user_input == roll
+    	return "You guessed the correct number!"
+    elsif user_input != roll
+    	return "The computer guessed #{roll}."
+    elsif user_input == "exit"
+      puts "Goodbye!"
     else
-      puts "Invalid input"
+      puts "Invalid input "
     end
-  end
+
+
 end
