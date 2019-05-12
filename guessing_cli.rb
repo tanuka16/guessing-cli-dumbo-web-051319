@@ -4,8 +4,9 @@ def run_guessing_game
   loop do
     puts "Guess a number between 1 to 6."
     #generate random number
-    random_num = rand(1..6)
     guess = gets.chomp
+    random_num = rand(1..6)
+
 
     if guess == "exit"
       puts "Goodbye"
@@ -13,10 +14,8 @@ def run_guessing_game
       #compare guess to random number
     elsif guess.to_i == random_num
       puts "You guessed the correct number!"
-
     elsif guess.to_i != random_num
       puts "The computer guessed #{random_num}"
-
     else
       puts "Invalid input"
     end
