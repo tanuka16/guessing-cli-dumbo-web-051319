@@ -12,6 +12,8 @@ def run_guessing_game
       puts "You guessed the correct number!"
     elsif input.to_i != random_num
       puts "The computer guessed #{random_num}"
+    else
+      puts "Invalid input"
 
 
   end
