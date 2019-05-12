@@ -1,7 +1,7 @@
 # Code your solution here!
 #Taking in input from the command line - Comparing that input to a random number that has been generate
 def run_guessing_game
-#  loop do
+  loop do
     puts "Guess a number between 1 to 6."
     guess == gets.chomp
     #generate random number
